@@ -12,13 +12,13 @@ Given the JSON
 [{ "device": { "location": "Outside", "status": { "temperature": 23.2 }}}]
 ```
 
-the JsonPath expression `$.device.location` exstracts the string instead a valid JSON `[ "Outside" ]`, see [differences](#differences-to-standard-jsonpath).
+the JsonPath expression `$.device.location` extracts the string. While a valid JSON would return `[ "Outside" ]`, see [differences](#differences-to-standard-jsonpath).
 
 ```
 Outside
 ```
 
-the JsonPath expression `$.device.status.temperature` exstracts the number instead a valid JSON `[ 23.2 ]`, see [differences](#differences-to-standard-jsonpath).
+the JsonPath expression `$.device.status.temperature` extracts the number instead a valid JSON would return `[ 23.2 ]`, see [differences](#differences-to-standard-jsonpath).
 
 ```
 23.2
